@@ -1,9 +1,6 @@
 import scrapy
 
 
-
-
-
 class CianSpider(scrapy.Spider):
     name = 'cian'
     allowed_domains = ['kazan.cian.ru']
@@ -61,4 +58,3 @@ class CianSpider(scrapy.Spider):
             more_url = response.xpath('//a[span[contains(text(), "Показать ещё")]]/@href').get()
             if more_url:
                 yield response.follow(more_url, callback=self.parse)
-
