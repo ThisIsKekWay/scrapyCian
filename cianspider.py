@@ -5,7 +5,7 @@ class CianSpider(scrapy.Spider):
     name = 'cian'
     allowed_domains = ['kazan.cian.ru']
     start_urls = [
-        'https://kazan.cian.ru/cat.php?deal_type=sale&engine_version=2&offer_type=flat&p=54&region=4777&room1=1'
+        'https://kazan.cian.ru/cat.php?deal_type=sale&engine_version=2&offer_type=flat&p=1&region=4777&room1=1'
     ]
     custom_settings = {
         'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
